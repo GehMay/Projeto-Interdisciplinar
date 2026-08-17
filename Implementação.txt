@@ -70,3 +70,5 @@ Documento de Implementação
     5.2. Implantação
         Escolha uma plataforma de hospedagem (ex.: Vercel, Netlify, Heroku).
         Configure o ambiente de produção, incluindo variáveis de ambiente e banco de dados.
+
+InterLink - Se o projeto é interdisciplinar e envolve conexão entre áreas.
