@@ -969,7 +969,7 @@ footer,
     border-bottom: 1px solid rgba(25, 35, 43, 0.14);
 }
 
-.pagina-sobre .titulo_pagina {
+.pagina-sobre, .titulo_pagina {
     color: var(--sobre-azul-escuro);
     font-size: 1.45rem;
     font-weight: 800;

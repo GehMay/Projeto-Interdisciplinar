@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TrocaTicket</title>
-        <link rel="stylesheet" href="../CSS/style.css">
-    </head>
-    <body class="pagina-contato">
-        <header class="cabecalho">
-            <a href="index.html" class="titulo_pagina">Troca<span>Ticket</span></a>
-            <p class="subtitulo_pagina">Eventos & ingressos</p>
-            <nav class="cabecalho_nav" aria-label="Navegação principal">
-                <a href="index.html" class="cabecalho_nav_link pagina-inicial_nav_ativo">Início</a>
-                <a href="eventos.html" class="cabecalho_nav_link">Eventos</a>
-                <a href="sobre.html" class="cabecalho_nav_link">Sobre</a>
-                <a href="contato.html" class="cabecalho_nav_link">Contato</a>
-                <a href="login.html" class="cabecalho_nav_link_login">Entrar <span aria-hidden="true">↗</span></a>
-            </nav>
-        </header>
-        <main class="pagina-inicial_conteudo">
-            <section class="hero-inicial">
-                <div class="hero-inicial_texto">
-                    <p class="hero-inicial_kicker"><span></span>Fale Conosco</p>
-                    <h1>Avise sobre qualquer erro,<br>e tire suas<br>dúvidas</h1>
-                    <div class="hero-inicial_numeros" aria-label="Benefícios da plataforma">
-                        <div><strong>01</strong><span>Descubra<br>seu evento</span></div>
-                        <div><strong>02</strong><span>Compre<br>sem complicação</span></div>
-                        <div><strong>03</strong><span>Acesse<br>seu ticket</span></div>
-                    </div>
-                </div>
-            </section>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sobre | TrocaTicket</title>
+		<link rel="stylesheet" href="CSS/style.css">
+	</head>
+	<body class="pagina-sobre">
+		<header class="cabecalho sobre-cabecalho">
+			<a href="index.html" class="titulo_pagina">Troca<span>Ticket</span></a>
+			<p class="subtitulo_pagina">Eventos & ingressos</p>
+			<nav class="cabecalho_nav" aria-label="Navegação principal">
+				<a href="index.html" class="cabecalho_nav_link">Início</a>
+				<a href="eventos.html" class="cabecalho_nav_link">Eventos</a>
+				<a href="sobre.html" class="cabecalho_nav_link sobre-nav_ativo">Sobre</a>
+				<a href="contato.html" class="cabecalho_nav_link">Contato</a>
+				<a href="login.html" class="cabecalho_nav_link_login">Entrar <span aria-hidden="true">↗</span></a>
+			</nav>
+		</header>
 
-            <section class="inicial-sobre">
-                <div>
-                    <p class="secao-kicker">E-mails</p>
-                    <h2>Disponíveis de segunda a sexta dàs 9h até às 22h</h2>
-                </div>
-                <div class="inicial-sobre_detalhe">
-                    <a href="sobre.html" class="inicial-sobre_link">contato@gmail.com<span aria-hidden="true">↗</span></a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 TrocaTicket. Todos os direitos reservados.</p>
-        </footer>
-    </body>
+		<main class="sobre-conteudo">
+			<section class="sobre-hero">
+				<div class="sobre-texto">
+					<p class="sobre-etiqueta">Fale Conosco</p>
+					<h1>CONTATO</h1>
+					<p class="sobre-introducao">Entre em contato sempre que tiver dúvidas, e para avisar erros ocorridos.</p>
+
+					<div class="sobre-detalhes">
+						<article class="sobre-detalhe">
+							<p>E-mails</p>
+							<span>Aqui fica os links para os E-mails dos responsáveis</span>
+						</article>
+						<article class="sobre-detalhe">
+							<p>LinkedIn</p>
+							<span>Aqui fica os links para o LinkedIn</span>
+						</article>
+					</div>
+				</div>
+
+				<div class="ticket-visual" aria-label="Exemplo de ingresso digital emitido">
+					<div class="ticket-status"><span>✓</span></div>
+					<h2>Seu ingresso está pronto!</h2>
+					<p class="ticket-confirmacao">A confirmação chegou. Agora é só aproveitar o evento.</p>
+					<div class="ticket-linha"></div>
+					<div class="ticket-info ticket-info-duplo">
+						<div><small>Ticket ID</small><strong>TT-2026-0147</strong></div>
+						<div><small>Valor</small><strong>R$ 124,90</strong></div>
+					</div>
+					<div class="ticket-info">
+						<small>Data e horário</small>
+						<strong>23 de ago. de 2026, 20:30</strong>
+					</div>
+					<div class="ticket-cartao">
+						<span class="ticket-circulos" aria-hidden="true"></span>
+						<strong>Cliente TrocaTicket</strong>
+						<small>•••• 6142</small>
+					</div>
+					<div class="ticket-codigo" aria-hidden="true">|||||||||||||||||||||||||</div>
+					<p class="ticket-numero">4 1 7 8 2 0 5 3 9 1 6 4 7 2</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="sobre-rodape">
+			<p>&copy; 2026 TrocaTicket. Todos os direitos reservados.</p>
+		</footer>
+	</body>
 </html>
