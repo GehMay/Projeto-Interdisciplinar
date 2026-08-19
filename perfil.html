@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu perfil | TrocaTicket</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body class="pagina-usuario pagina-perfil">
+        <header class="usuario-cabecalho">
+            <a href="usuario.html" class="usuario-marca"><span class="usuario-marca_icone">TT</span><strong>Troca<span>Ticket</span></strong></a>
+            <nav class="usuario-nav" aria-label="Área do usuário">
+                <a href="usuario.html">Início</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="usuario.html#marketplace">Marketplace</a>
+                <a href="usuario.html#ingressos">Ingressos</a>
+                <a href="usuario.html#pedidos">Pedidos</a>
+            </nav>
+            <div class="usuario-acoes">
+                <a href="perfil.html" class="usuario-avatar_link usuario-nav_perfil" aria-label="Perfil atual"><span class="usuario-avatar" data-perfil-iniciais>TT</span></a>
+                <button type="button" class="usuario-sair" data-sair aria-label="Sair da conta">↪</button>
+            </div>
+        </header>
+
+        <main class="perfil-conteudo">
+            <a href="usuario.html" class="perfil-voltar">← Voltar ao início</a>
+            <section class="perfil-cabecalho">
+                <div class="perfil-foto_area">
+                    <div class="perfil-foto" data-perfil-foto>TT</div>
+                    <label class="perfil-foto_botao">Alterar foto<input type="file" data-foto-input accept="image/png,image/jpeg,image/webp"></label>
+                </div>
+                <div><p class="perfil-kicker">Minha conta</p><h1 data-perfil-titulo>Meu perfil</h1><p>Gerencie seus dados e acompanhe sua jornada no TrocaTicket.</p></div>
+            </section>
+
+            <div class="perfil-grid">
+                <section class="perfil-painel perfil-dados">
+                    <div class="perfil-painel_titulo"><div><p class="perfil-kicker">Informações pessoais</p><h2>Seus dados</h2></div></div>
+                    <form data-perfil-form>
+                        <label for="perfil-nome">Nome completo</label>
+                        <input id="perfil-nome" name="nome" type="text" required>
+                        <label for="perfil-email">E-mail</label>
+                        <input id="perfil-email" name="email" type="email" required>
+                        <button type="submit" class="perfil-botao">Salvar alterações <span aria-hidden="true">↗</span></button>
+                        <p class="perfil-mensagem" data-perfil-mensagem role="status"></p>
+                    </form>
+                </section>
+
+                <section class="perfil-painel">
+                    <div class="perfil-painel_titulo"><div><p class="perfil-kicker">Acesso</p><h2>Alterar senha</h2></div></div>
+                    <form data-senha-form>
+                        <label for="senha-atual">Senha atual</label>
+                        <input id="senha-atual" name="senhaAtual" type="password" required>
+                        <label for="nova-senha">Nova senha</label>
+                        <input id="nova-senha" name="novaSenha" type="password" minlength="6" required>
+                        <button type="submit" class="perfil-botao">Atualizar senha <span aria-hidden="true">↗</span></button>
+                        <p class="perfil-mensagem" data-senha-mensagem role="status"></p>
+                    </form>
+                </section>
+            </div>
+
+            <section class="perfil-resumo">
+                <div class="perfil-painel_titulo"><div><p class="perfil-kicker">Resumo da conta</p><h2>Seu movimento</h2></div></div>
+                <div class="perfil-indicadores">
+                    <a href="usuario.html#ingressos"><strong>0</strong><span>Ingressos</span><small>Nenhum ingresso ativo</small></a>
+                    <a href="usuario.html#marketplace"><strong>0</strong><span>Suas vendas</span><small>Nenhum anúncio publicado</small></a>
+                    <a href="#pagamentos-atrasados"><strong>0</strong><span>Pagamentos atrasados</span><small>Tudo em dia</small></a>
+                    <a href="#vendas-pendentes"><strong>0</strong><span>Vendas a receber</span><small>Nenhum pagamento pendente</small></a>
+                </div>
+            </section>
+
+            <section class="perfil-listas">
+                <article id="pagamentos-atrasados"><p class="perfil-kicker">Pagamentos</p><h2>Pagamentos atrasados</h2><p class="perfil-vazio">Você não possui pagamentos atrasados.</p></article>
+                <article id="vendas-pendentes"><p class="perfil-kicker">Marketplace</p><h2>Vendas ainda não pagas</h2><p class="perfil-vazio">Suas vendas pendentes aparecerão aqui.</p></article>
+            </section>
+        </main>
+        <footer class="usuario-rodape"><p>&copy; 2026 TrocaTicket. Todos os direitos reservados.</p></footer>
+        <script src="JS/perfil.js" defer></script>
+    </body>
+</html>

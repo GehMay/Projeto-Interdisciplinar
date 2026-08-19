@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro | TrocaTicket</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body class="pagina-login pagina-cadastro">
+        <main class="login-layout">
+            <section class="login-apresentacao">
+                <a href="index.html" class="login-logo">Troca<span>Ticket</span></a>
+                <div class="login-apresentacao_texto">
+                    <p class="login-etiqueta">Faça parte da jornada</p>
+                    <h1>Seu próximo evento começa com um cadastro.</h1>
+                    <p>Crie sua conta para descobrir experiências, guardar seus ingressos e acompanhar tudo com mais praticidade.</p>
+                </div>
+                <div class="login-apresentacao_rodape"><span>TT</span><small>Eventos & ingressos</small></div>
+            </section>
+
+            <section class="login-formulario" aria-labelledby="cadastro-titulo">
+                <a href="login.html" class="login-voltar">← Já tenho uma conta</a>
+                <div class="login-formulario_conteudo">
+                    <p class="login-kicker">Crie seu acesso</p>
+                    <h2 id="cadastro-titulo">Vamos começar.</h2>
+                    <p class="login-subtitulo">Preencha seus dados para criar sua conta.</p>
+                    <form class="login-form cadastro-form" action="#" method="post" data-auth="cadastro">
+                        <label for="nome">Nome completo</label>
+                        <input id="nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required>
+
+                        <label for="cadastro-email">E-mail</label>
+                        <input id="cadastro-email" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,}" required>
+
+                        <label for="cadastro-senha">Senha</label>
+                        <div class="campo-senha">
+                            <input id="cadastro-senha" name="senha" type="password" placeholder="Crie uma senha" autocomplete="new-password" required>
+                            <button type="button" class="campo-senha_olho" data-mostrar-senha="cadastro-senha" aria-label="Mostrar senha"><span aria-hidden="true"></span></button>
+                        </div>
+
+                        <label class="login-lembrar"><input type="checkbox" name="termos" required> <span>Li e concordo com os <a href="termos-uso.html" target="_blank" rel="noopener">Termos de Uso e Política de Privacidade</a>.</span></label>
+                        <p class="auth-mensagem" data-mensagem role="status"></p>
+                        <button type="submit">Criar conta <span aria-hidden="true">↗</span></button>
+                    </form>
+                    <p class="login-cadastro">Já possui uma conta? <a href="login.html">Entrar</a></p>
+                </div>
+            </section>
+        </main>
+        <script src="JS/auth.js" defer></script>
+    </body>
+</html>

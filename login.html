@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entrar | TrocaTicket</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body class="pagina-login">
+        <main class="login-layout">
+            <section class="login-apresentacao">
+                <a href="index.html" class="login-logo">Troca<span>Ticket</span></a>
+                <div class="login-apresentacao_texto">
+                    <p class="login-etiqueta">Sua jornada continua aqui</p>
+                    <h1>Volte para o seu próximo momento.</h1>
+                    <p>Entre para acompanhar seus ingressos, descobrir novos eventos e manter tudo organizado em um só lugar.</p>
+                </div>
+                <div class="login-apresentacao_rodape"><span>TT</span><small>Eventos & ingressos</small></div>
+            </section>
+
+            <section class="login-formulario" aria-labelledby="login-titulo">
+                <a href="index.html" class="login-voltar">← Voltar ao início</a>
+                <div class="login-formulario_conteudo">
+                    <p class="login-kicker">Acesse sua conta</p>
+                    <h2 id="login-titulo">Bem-vindo de volta.</h2>
+                    <p class="login-subtitulo">Entre com seus dados para continuar.</p>
+                    <form class="login-form" action="#" method="post" data-auth="login">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,}" required>
+
+                        <div class="login-senha_cabecalho">
+                            <label for="senha">Senha</label>
+                            <a href="#">Esqueci minha senha</a>
+                        </div>
+                        <div class="campo-senha">
+                            <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+                            <button type="button" class="campo-senha_olho" data-mostrar-senha="senha" aria-label="Mostrar senha"><span aria-hidden="true"></span></button>
+                        </div>
+
+                        <label class="login-lembrar"><input type="checkbox" name="lembrar"> <span>Manter conectado</span></label>
+                        <p class="auth-mensagem" data-mensagem role="status"></p>
+                        <button type="submit">Entrar <span aria-hidden="true">↗</span></button>
+                    </form>
+                    <p class="login-cadastro">Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                </div>
+            </section>
+        </main>
+        <script src="JS/auth.js" defer></script>
+    </body>
+</html>

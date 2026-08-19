@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos | TrocaTicket</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body class="pagina-eventos">
+        <header class="cabecalho eventos-cabecalho">
+            <a href="index.html" class="titulo_pagina">Troca<span>Ticket</span></a>
+            <p class="subtitulo_pagina">Eventos & ingressos</p>
+            <nav class="cabecalho_nav" aria-label="Navegação principal">
+                <a href="index.html" class="cabecalho_nav_link">Início</a>
+                <a href="eventos.html" class="cabecalho_nav_link eventos-nav_ativo">Eventos</a>
+                <a href="sobre.html" class="cabecalho_nav_link">Sobre</a>
+                <a href="contato.html" class="cabecalho_nav_link">Contato</a>
+                <a href="login.html" class="cabecalho_nav_link_login">Entrar <span aria-hidden="true">↗</span></a>
+            </nav>
+        </header>
+
+        <main class="eventos-conteudo">
+            <section class="eventos-hero">
+                <div class="eventos-hero_texto">
+                    <p class="eventos-etiqueta">Eventos TrocaTicket</p>
+                    <h1>Encontre<br>seu próximo<br><span>evento.</span></h1>
+                    <p>Descubra experiências, escolha seu ingresso e acompanhe tudo em um só lugar.</p>
+                </div>
+                <div class="eventos-hero_selo" aria-hidden="true">TT<br><small>VIVA</small></div>
+            </section>
+
+            <section class="eventos-explorar">
+                <div class="eventos-busca">
+                    <span class="eventos-busca_icone" aria-hidden="true"></span>
+                    <input type="search" placeholder="Busque por evento, cidade, local ou categoria" aria-label="Buscar eventos">
+                    <span class="eventos-busca_atalho">⌘ K</span>
+                </div>
+                <div class="eventos-status"><span></span><small>Disponíveis</small><strong>3 eventos</strong></div>
+            </section>
+
+            <section class="eventos-lista" aria-labelledby="eventos-titulo">
+                <div class="eventos-lista_cabecalho">
+                    <div><p class="eventos-secao_kicker">Descubra</p><h2 id="eventos-titulo">Eventos disponíveis</h2></div>
+                    <p class="eventos-lista_contador">03 resultados</p>
+                </div>
+                <div class="eventos-grid">
+                    <article class="evento-card">
+                        <div class="evento-card_visual evento-card_show"><span>AO<br>VIVO</span><strong>SHOW</strong></div>
+                        <div class="evento-card_corpo"><span class="evento-card_tipo">Música</span><h3>Noite em movimento</h3><p>25 de novembro de 2026 · São Paulo</p><a href="login.html">Ver ingressos <span aria-hidden="true">↗</span></a></div>
+                    </article>
+                    <article class="evento-card">
+                        <div class="evento-card_visual evento-card_jogo"><span>90'</span><strong>JOGO</strong></div>
+                        <div class="evento-card_corpo"><span class="evento-card_tipo">Esportes</span><h3>Clássico no estádio</h3><p>30 de novembro de 2026 · Rio de Janeiro</p><a href="login.html">Ver ingressos <span aria-hidden="true">↗</span></a></div>
+                    </article>
+                    <article class="evento-card">
+                        <div class="evento-card_visual evento-card_teatro"><span>EM<br>CENA</span><strong>PALCO</strong></div>
+                        <div class="evento-card_corpo"><span class="evento-card_tipo">Teatro</span><h3>Uma noite de histórias</h3><p>10 de dezembro de 2026 · Belo Horizonte</p><a href="login.html">Ver ingressos <span aria-hidden="true">↗</span></a></div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="eventos-rodape"><p>&copy; 2026 TrocaTicket. Todos os direitos reservados.</p></footer>
+    </body>
+</html>
